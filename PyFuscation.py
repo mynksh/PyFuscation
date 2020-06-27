@@ -212,7 +212,7 @@ def main():
 
     printR("Obfuscating: " + iFile)
     ts = time.strftime("%m%d%Y_%H_%M_%S", time.gmtime())
-    oDir = os.path.dirname(args.script) + "/" + ts
+    oDir = os.getcwd() + "/" + ts
     os.mkdir( oDir );
     oFile = oDir + "/" + ts + ".ps1"
     vFile = oDir + "/" + ts + ".variables"
